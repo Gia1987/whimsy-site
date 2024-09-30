@@ -4,7 +4,7 @@ import react from '@astrojs/react';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://Gia1987.github.io',
-  base: 'my-repo',
+  site: import.meta.env.MY_DOMAIN,
+  base: 'whimsy-site',
   integrations: [react()]
 });
