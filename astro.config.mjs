@@ -6,5 +6,13 @@ import react from '@astrojs/react';
 export default defineConfig({
   site: import.meta.env.PUBLIC_MY_DOMAIN,
   base: 'whimsy-site',
-  integrations: [react()]
+  integrations: [react()],
+  vite: {
+    ssr: {
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+      },
+    },
+  },
 });
+
