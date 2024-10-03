@@ -17,7 +17,7 @@ export const VideoRender = () => {
   return (
     <>
       {videos.map((item, index) => (
-        <div>
+        <div className="video-box">
           <>{item.title}</>
           <VideoPlayer
             key={index}

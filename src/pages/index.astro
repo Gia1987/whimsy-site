@@ -10,7 +10,7 @@ import Layout from "../layouts/Layout.astro";
     <h2>
       {LANDING_PAGE_SUBTITLE}
     </h2>
-    <div class="video-container text-center">
+    <div class="video-container">
       <VideoRender client:load />
     </div>
   </main>
@@ -24,7 +24,6 @@ import Layout from "../layouts/Layout.astro";
     max-width: calc(100% - 2rem);
     color: #231f20;
     font-size: 20px;
-    line-height: 1.6;
     text-align: center;
   }
   h1 {
@@ -34,11 +33,14 @@ import Layout from "../layouts/Layout.astro";
   .video-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 5rem;
     padding: 0;
     @media (max-width: 1000px) {
       grid-template-columns: none;
+    }
+    .video-box {
+      display: grid;
       justify-content: center;
+      margin-top: 10px;
     }
     .video {
       width: 250px;
