@@ -5,7 +5,7 @@ import react from '@astrojs/react';
 // https://astro.build/config
 export default defineConfig({
   site: import.meta.env.PUBLIC_MY_DOMAIN,
-  base: 'whimsy-site',
+  base: import.meta.env.PUBLIC_BASE,
   integrations: [react()]
 });
 
