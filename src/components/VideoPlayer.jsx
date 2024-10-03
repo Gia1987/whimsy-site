@@ -1,13 +1,29 @@
-export const VideoPlayer = ({src, poster}) => {
-<script>
-  console.log("Hi! I’m the client. This is logged in browser dev console.");
-</script>
+import { useRef, useEffect } from "react";
+
+export const VideoPlayer = ({ src, poster, onPlay, isPlaying }) => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (isPlaying) {
+      videoRef.current.play();
+    } else {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  }, [isPlaying]);
+
   return (
-    <div >
-      <video className="video" controls preload="none" width="100%" poster={poster}>
-        <source src={src} type="video/mp4"/>
-      </video>
-    </div>
+    <video
+      ref={videoRef}
+      className="video"
+      onPlay={onPlay}
+      controls
+      preload="none"
+      width="100%"
+      poster={poster}
+    >
+      <source src={src} type="video/mp4" />
+    </video>
   );
 };
 
