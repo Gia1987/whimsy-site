@@ -8,12 +8,12 @@ export const VideoPlayer = ({ src, poster, onPlay, isPlaying }) => {
       videoRef.current.play();
     } else {
       videoRef.current.pause();
-      // videoRef.current.currentTime = 0;
     }
   }, [isPlaying]);
 
   return (
     <video
+      key={src}
       ref={videoRef}
       className="video"
       onPlay={onPlay}
