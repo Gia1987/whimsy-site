@@ -1,30 +1,17 @@
 ---
+import { VideoRender } from "../components/VideoRender";
+import { LANDING_PAGE_SUBTITLE, LANDING_PAGE_TITLE } from "../constants";
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import VideoPlayer from "../components/VideoPlayer";
 ---
 
 <Layout title="Welcome Whimsy.">
   <main>
-    <h1>Welcome to Whimsy</h1>
-    <p class="subtitle">
-      To get started, open the directory <code>src/pages</code> in your project.<br
-      />
-      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-    </p>
+    <h1>{LANDING_PAGE_TITLE}</h1>
+    <h2>
+      {LANDING_PAGE_SUBTITLE}
+    </h2>
     <div class="video-container">
-      <VideoPlayer
-        src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
-        poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
-      />
-      <VideoPlayer
-        src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
-        poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
-      />
-      <VideoPlayer
-        src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
-        poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
-      />
+      <VideoRender client:load />
     </div>
   </main>
 </Layout>
@@ -35,27 +22,31 @@ import VideoPlayer from "../components/VideoPlayer";
     padding: 1rem;
     width: 1000px;
     max-width: calc(100% - 2rem);
-    color: black;
+    color: #231f20;
     font-size: 20px;
-    line-height: 1.6;
+    text-align: center;
   }
   h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    margin-bottom: 1em;
+    font-size: 3rem;
+    font-weight: bold;
   }
   .video-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 2rem;
     padding: 0;
-    @media (max-width: 925px) {
+    @media (max-width: 1000px) {
       grid-template-columns: none;
     }
-  }
-  .subtitle {
-    text-align: center;
+    .video-box {
+      display: grid;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    .video {
+      width: 250px;
+      height: 250px;
+      border: 3px solid #231f20;
+      border-radius: 10%;
+    }
   }
 </style>
