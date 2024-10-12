@@ -13,7 +13,6 @@ export const VideoPlayer = ({ src, poster, onPlay, isPlaying }) => {
 
   return (
     <video
-      key={src}
       ref={videoRef}
       className="video"
       onPlay={onPlay}
@@ -21,9 +20,8 @@ export const VideoPlayer = ({ src, poster, onPlay, isPlaying }) => {
       preload="none"
       width="100%"
       poster={poster}
-    >
-      <source src={src} type="video/mp4" />
-    </video>
+      src={src}
+    />
   );
 };
 

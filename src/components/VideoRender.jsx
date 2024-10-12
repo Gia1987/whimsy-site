@@ -29,10 +29,9 @@ export const VideoRender = () => {
   return (
     <>
       {videos.map((item, index) => (
-        <div className="video-box">
-          <>{item.title}</>
+        <div key={`${index}-${item.title}`} className="video-box">
+          <div className="video-title">{item.title}</div>
           <VideoPlayer
-            key={`${index}-${item.title}`}
             src={item.video}
             isPlaying={playingVideo === index}
             onPlay={() => handlePlay(index)}
