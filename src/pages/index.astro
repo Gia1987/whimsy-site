@@ -1,6 +1,11 @@
 ---
+import { ListOfQuestions } from "../components/ListOfQuestions";
 import { VideoRender } from "../components/VideoRender";
-import { LANDING_PAGE_SUBTITLE, LANDING_PAGE_TITLE } from "../constants";
+import {
+  LANDING_PAGE_BODY,
+  LANDING_PAGE_SUBTITLE,
+  LANDING_PAGE_TITLE,
+} from "../constants";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -13,6 +18,11 @@ import Layout from "../layouts/Layout.astro";
     <div class="video-container">
       <VideoRender client:load />
     </div>
+    <h2>
+      {LANDING_PAGE_BODY}
+    </h2>
+
+    <ListOfQuestions client:load />
   </main>
 </Layout>
 
@@ -20,7 +30,6 @@ import Layout from "../layouts/Layout.astro";
   main {
     margin: auto;
     padding: 1rem;
-    width: 1200px;
     max-width: calc(100% - 2rem);
     color: #231f20;
     font-size: 20px;
@@ -32,7 +41,7 @@ import Layout from "../layouts/Layout.astro";
   }
   .video-container {
     display: flex;
-    @media (max-width: 1000px) {
+    @media (max-width: 1680px) {
       flex-direction: column;
     }
     .video-box {
@@ -44,8 +53,8 @@ import Layout from "../layouts/Layout.astro";
       margin-top: 10px;
     }
     .video {
-      width: 250px;
-      height: 250px;
+      width: 500px;
+      height: 500px;
       border: 3px solid #231f20;
       border-radius: 10%;
       @media (max-width: 913px) {
@@ -55,7 +64,8 @@ import Layout from "../layouts/Layout.astro";
     }
     .video-title {
       width: max-content;
-      font-size: 26px;
+      font-size: 36px;
+      font-weight: 600;
       margin-bottom: 10px;
       @media (max-width: 1000px) {
         width: 100%;
