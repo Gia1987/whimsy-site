@@ -6,4 +6,7 @@ import react from "@astrojs/react";
 export default defineConfig({
   site: import.meta.env.PUBLIC_MY_DOMAIN,
   integrations: [react()],
+  build: {
+    include: ["src/**/*"],
+  },
 });
