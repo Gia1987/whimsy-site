@@ -9,7 +9,7 @@ import {
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome Whimsy.">
+<Layout title="Welcome to Whimsy">
   <main>
     <h1>{LANDING_PAGE_TITLE}</h1>
     <h1>
@@ -19,7 +19,7 @@ import Layout from "../layouts/Layout.astro";
       <VideoRender client:load />
     </div>
     <h1>
-      {LANDING_PAGE_BODY}
+      <a class="link" href="/contact">Contact me </a>{LANDING_PAGE_BODY}
     </h1>
     <h1>You can answer these prompts for inspiration!</h1>
     <ListOfQuestions client:load />
@@ -38,6 +38,8 @@ import Layout from "../layouts/Layout.astro";
   h1 {
     font-size: 3rem;
     font-weight: bold;
+    text-decoration: none;
+    color: #231f20;
   }
   .video-container {
     display: flex;

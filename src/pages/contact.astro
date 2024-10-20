@@ -1,11 +1,21 @@
 ---
+import Form from "../components/Form";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Contact">
   <main>
-    <h1>Contact</h1>
-    <p class="subtitle">This is contact page</p>
+    <h1>
+      Please get in touch so we can discuss your ideas and how I can help
+      deliver your vision. You can email me <a
+        href="mailto:whimsybynada@gmail.com"
+      >
+        whimsybynada@gmail.com
+      </a>
+      or fill out the contact from below:
+    </h1>
+
+    <Form client:load />
   </main>
 </Layout>
 
