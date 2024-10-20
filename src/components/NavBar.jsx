@@ -6,10 +6,10 @@ const NavBar = () => {
   const isMobile = size.width < 900;
   return (
     <nav style={styles.navbar}>
-      <a style={styles.link} href="/whimsy-site/">
+      <a style={styles.link} href={`/`}>
         <img
           style={styles.logo}
-          src="/whimsy-site/logo/stacked-whimsy-logo.svg"
+          src="logo/stacked-whimsy-logo.svg"
           alt="logo"
         />
       </a>
@@ -19,27 +19,27 @@ const NavBar = () => {
         >
           {isMobile ? (
             <>
-              <a href="/whimsy-site/contact" style={styles.link}>
+              <a href="/contact" style={styles.link}>
                 <img
                   style={styles.icons}
-                  src="/whimsy-site/icons/contact-icon.svg"
+                  src="icons/contact-icon.svg"
                   alt="contact"
                 />
               </a>
-              <a href="/whimsy-site/about" style={styles.link}>
+              <a href="/about" style={styles.link}>
                 <img
                   style={styles.icons}
-                  src="/whimsy-site/icons/info-icon.svg"
+                  src="icons/info-icon.svg"
                   alt="about"
                 />
               </a>
             </>
           ) : (
             <>
-              <a href="/whimsy-site/contact" style={styles.link}>
+              <a href="/contact" style={styles.link}>
                 Contact
               </a>
-              <a href="/whimsy-site/about" style={styles.link}>
+              <a href="/about" style={styles.link}>
                 About
               </a>
             </>
@@ -52,7 +52,7 @@ const NavBar = () => {
           >
             <img
               style={styles.icons}
-              src="/whimsy-site/icons/tiktok-black-icon-seeklogo.svg"
+              src="icons/tiktok-black-icon-seeklogo.svg"
               alt="tiktok"
             />
           </a>
@@ -62,7 +62,7 @@ const NavBar = () => {
           >
             <img
               style={styles.icons}
-              src="/whimsy-site/icons/black-instagram-icon.svg"
+              src="icons/black-instagram-icon.svg"
               alt="instagram"
             />
           </a>
