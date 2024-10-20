@@ -4,7 +4,7 @@ import { colors } from "../theme";
 export const Form = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [wordCount, setWordCount] = useState(0);
+  const [ChartCount, setChartCount] = useState(0);
 
   const handleEmailChange = (e) => setEmail(e.target.value);
 
@@ -12,7 +12,7 @@ export const Form = () => {
     const text = e.target.value;
     if (text.length <= 500) {
       setMessage(text);
-      setWordCount(text.length);
+      setChartCount(text.length);
     }
   };
 
@@ -46,7 +46,7 @@ export const Form = () => {
         rows="5"
         style={styles.textarea}
       />
-      <p style={styles.wordCount}>Word Count: {wordCount}/500</p>
+      <p style={styles.wordCount}>Charts Count: {ChartCount}/500</p>
 
       <button type="submit" style={styles.button}>
         Send
@@ -83,7 +83,7 @@ const styles = {
     padding: "0.5rem",
     fontSize: "1rem",
     borderRadius: "4px",
-    border: "1px solid #ccc",
+    border: `1px solid ${colors.black}`,
   },
   wordCount: {
     marginBottom: "1rem",
