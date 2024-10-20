@@ -1,13 +1,10 @@
 export const LANDING_PAGE_TITLE = "Moments that Move you. Art that Moves.";
 export const LANDING_PAGE_SUBTITLE =
-  "We capture your meaningful moments in delicately hand-drawn animations";
+  "I capture your meaningful moments in delicately hand-drawn animations";
 export const LANDING_PAGE_BODY =
-  "Send us your message, announcements or short story and we'll turn it into a 30-seconds animated short!";
+  "Contact me to discuss your ideas so I can bring your message, announcement, or short story to life in the whimsy style!  I can produce videos in English and Arabic.";
 export const QUESTIONS = [
-  {
-    question:
-      "If you need help thinking of something, answer our prompt: Is there a special message you want to send to someone?",
-  },
+  { question: "Is there a special message you want to send to someone?" },
   { question: "Is there a message you want to send to someone?" },
   { question: "Is there an announcement you want to make?" },
   {

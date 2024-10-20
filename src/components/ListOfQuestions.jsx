@@ -5,7 +5,7 @@ export const ListOfQuestions = () => {
     <>
       {QUESTIONS.map((item, index) => (
         <div key={`${item.question}-${index}`} className="question">
-          <h3>{item.question}</h3>
+          <h2>{item.question}</h2>
         </div>
       ))}
     </>

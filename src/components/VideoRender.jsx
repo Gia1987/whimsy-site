@@ -6,17 +6,17 @@ export const VideoRender = () => {
 
   const videos = [
     {
-      video: "video/first-date-question.mp4",
+      video: "/whimsy-site/video/first-date-question.mp4",
       title: "Favourite moment with your significant other",
       poster: "covers/first-date-cover.png",
     },
     {
-      video: "video/best-meal-ever.mp4",
+      video: "/whimsy-site/video/best-meal-ever.mp4",
       title: "A story from your travels",
       poster: "covers/best-meal-ever-cover.png",
     },
     {
-      video: "video/grandfather-wisdom.mp4",
+      video: "/whimsy-site/video/grandfather-wisdom.mp4",
       title: "A wonderful memory from Childhood ",
       poster: "covers/grandfather-wisdom-cover.png",
     },

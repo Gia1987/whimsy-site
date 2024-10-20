@@ -12,16 +12,16 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Welcome Whimsy.">
   <main>
     <h1>{LANDING_PAGE_TITLE}</h1>
-    <h2>
+    <h1>
       {LANDING_PAGE_SUBTITLE}
-    </h2>
+    </h1>
     <div class="video-container">
       <VideoRender client:load />
     </div>
-    <h2>
+    <h1>
       {LANDING_PAGE_BODY}
-    </h2>
-
+    </h1>
+    <h1>You can answer these prompts for inspiration!</h1>
     <ListOfQuestions client:load />
   </main>
 </Layout>
@@ -64,7 +64,7 @@ import Layout from "../layouts/Layout.astro";
     }
     .video-title {
       width: max-content;
-      font-size: 36px;
+      font-size: 28px;
       font-weight: 600;
       margin-bottom: 10px;
       @media (max-width: 1000px) {
