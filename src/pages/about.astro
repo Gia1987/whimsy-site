@@ -4,8 +4,33 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="About">
   <main>
-    <h1>About</h1>
-    <p class="subtitle">This is about page</p>
+    <h1>Welcome to Whimsy by Nada!</h1>
+    <h2 class="subtitle">
+      Thank you for coming! I’m Nada, the founder and artist behind the brand.
+      <br /><br />
+      My passion for hand-drawing, watercolor painting, and storytelling has always
+      been at the heart of who I am. I decided to bring all these loves together
+      to create something meaningful—capturing people's most important moments, messages,
+      and stories through literally/figuratively moving art.
+      <br /><br />
+      What I value most in my life are my relationships with family, friends, and
+      my partner. Thousands of small stories shape who I am, and I believe this is
+      true for most people. In fact, studies consistently show that the biggest determinant
+      of happiness and health is the quality of our relationships.
+      <br /><br />
+      In today's world, while technology adds convenience, can lasting, meaningful
+      relationships really be built or sustained by convenience alone? That's why
+      I put my creative energy into capturing the little stories that make our connections
+      unique. Whimsy by Nada is a celebration of those stories, creating art that
+      brings them to life, preserving what truly matters.
+    </h2>
+    <video
+      class="video"
+      controls
+      preload="none"
+      width="100%"
+      poster="covers/bio-cover.png"
+      src={"video/bio.mp4"}></video>
   </main>
 </Layout>
 
@@ -15,8 +40,12 @@ import Layout from "../layouts/Layout.astro";
     padding: 1rem;
     width: 1000px;
     max-width: calc(100% - 2rem);
-    color: black;
+    color: #231f20;
     font-size: 20px;
     line-height: 1.6;
+  }
+  .video {
+    border: 3px solid #231f20;
+    border-radius: 5%;
   }
 </style>
