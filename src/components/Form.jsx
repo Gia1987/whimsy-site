@@ -66,6 +66,7 @@ const styles = {
     borderRadius: "8px",
     border: `3px solid ${colors.black}`,
     boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
+    textAlign: "left",
   },
   label: {
     marginBottom: "0.5rem",
