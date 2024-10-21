@@ -17,10 +17,12 @@ const currentYear = new Date().getFullYear();
 <style>
   :root {
     --black: ${theme.black};
-    --white: ${theme.white};
+  }
+  p {
+    font-size: 24px;
   }
   footer {
-    background-color: var(--white);
+    background-color: white;
     color: var(--black);
     padding: 1rem;
     text-align: center;
@@ -36,6 +38,7 @@ const currentYear = new Date().getFullYear();
   .footer-content ul li a {
     color: var(--black);
     text-decoration: none;
+    font-size: 24px;
   }
   .footer-content ul li a:hover {
     text-decoration: underline;
