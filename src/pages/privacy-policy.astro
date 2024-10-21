@@ -1,0 +1,104 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { colors } from "../theme";
+export const theme = colors;
+---
+
+<Layout title="Privacy Policy">
+  <main>
+    <h1>Privacy Policy</h1>
+    <h2>1. Introduction</h2>
+    <p>
+      Whimsy by Nada ("we," "our," or "us") is committed to protecting your
+      privacy. This Privacy Policy outlines how we handle information that you
+      provide when using our website, www.whimsybynada.com (the "Website"). By
+      using the Website, you agree to this policy.
+    </p>
+
+    <h2>2. Information We Collect</h2>
+    <p>
+      We do not collect or store any personal information on this Website. The
+      only information we may receive is your email address and the message you
+      provide through the contact form, which is used solely for the purpose of
+      corresponding with you regarding commissioned projects.
+    </p>
+
+    <h2>3. Use of Information</h2>
+    <p>
+      The email address you provide via the contact form will only be used to:
+    </p>
+    <ul>
+      <li>Respond to your inquiries</li>
+      <li>Correspond regarding your commissioned project</li>
+    </ul>
+    <p>
+      We do not use your email for marketing or promotional purposes unless you
+      explicitly request it.
+    </p>
+
+    <h2>4. Data Security</h2>
+    <p>
+      We take reasonable precautions to protect the information you provide
+      through the contact form. However, as with any online communication, we
+      cannot guarantee the absolute security of data.
+    </p>
+
+    <h2>5. No Payments or Financial Information</h2>
+    <p>
+      We do not process payments or collect any financial information through
+      the Website. All financial transactions, if any, will be arranged
+      separately and outside the Website.
+    </p>
+
+    <h2>6. Third-Party Sharing</h2>
+    <p>
+      We do not share, sell, or disclose any information you provide via the
+      contact form with third parties, except as necessary to comply with the
+      law or protect our rights.
+    </p>
+
+    <h2>7. Cookies and Tracking</h2>
+    <p>
+      We do not use cookies, tracking technologies, or analytics services to
+      collect data about your browsing activity on the Website.
+    </p>
+
+    <h2>8. Your Rights</h2>
+    <p>
+      Since we do not collect personal information beyond the email you
+      voluntarily provide through the contact form, there is no personal data
+      stored or processed that would require access, correction, or deletion.
+    </p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Any changes will be
+      posted on this page. Your continued use of the Website constitutes your
+      acceptance of these changes.
+    </p>
+
+    <h2>10. Contact</h2>
+    <p>
+      If you have any questions or concerns regarding this Privacy Policy,
+      please contact us via the contact form on the Website or email
+      whimsybynada@gmail.com.
+    </p>
+  </main>
+</Layout>
+
+<style>
+  :root {
+    --black: ${theme.black};
+  }
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 1000px;
+    max-width: calc(100% - 2rem);
+    color: var(--balck);
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    font-family: "Arial, sans-serif";
+  }
+</style>

@@ -1,0 +1,43 @@
+---
+import { colors } from "../theme";
+export const theme = colors;
+const currentYear = new Date().getFullYear();
+---
+
+<footer>
+  <div class="footer-content">
+    <ul>
+      <li><a href="/terms-and-conditions">Terms and Conditions</a></li>
+      <li><a href="/privacy-policy">Privacy Policy</a></li>
+    </ul>
+    <p>&copy; {currentYear} Whimsy by Nada. All rights reserved.</p>
+  </div>
+</footer>
+
+<style>
+  :root {
+    --black: ${theme.black};
+    --white: ${theme.white};
+  }
+  footer {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 1rem;
+    text-align: center;
+  }
+  .footer-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer-content ul li {
+    display: inline;
+    margin: 0 1rem;
+  }
+  .footer-content ul li a {
+    color: var(--black);
+    text-decoration: none;
+  }
+  .footer-content ul li a:hover {
+    text-decoration: underline;
+  }
+</style>

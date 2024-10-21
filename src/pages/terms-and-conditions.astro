@@ -1,0 +1,90 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { colors } from "../theme";
+export const theme = colors;
+---
+
+<Layout title="Terms & Conditions">
+  <main>
+    <h1>Terms and Conditions</h1>
+    <h3>1. Introduction</h3>
+    <p>
+      Welcome to www.whimsybynada.com (the "Website"). By accessing or using
+      this Website, you agree to be bound by these terms and conditions
+      ("Terms"). If you do not agree to all the Terms, please do not use this
+      Website.
+    </p>
+
+    <h3>2. Services</h3>
+    <p>
+      This Website promotes animation and art services created by Whimsy by Nada
+      (the "Service"). To inquire about engaging our services, you may fill out
+      the contact form provided or email whimsybynada@gmail.com. No personal
+      data is collected during this process, and users are not required to
+      create accounts or upload content to the Website.
+    </p>
+
+    <h3>3. Intellectual Property</h3>
+    <p>
+      All content on this Website, including but not limited to the logo, visual
+      designs, artwork, animations, trademarks, and any other materials created
+      by Whimsy by Nada, is the exclusive intellectual property of Nada Kawar.
+      You may not use, reproduce, distribute, or exploit any of the materials on
+      this Website without explicit written consent.
+    </p>
+
+    <h3>4. User Suggestions and Feedback</h3>
+    <p>
+      If you choose to provide feedback or suggestions related to our services
+      or Website, you acknowledge and agree that Whimsy by Nada may use these
+      suggestions or feedback for any purpose, without compensation, credit, or
+      acknowledgment. Any ideas, improvements, or recommendations become the
+      sole property of Whimsy by Nada.
+    </p>
+
+    <h3>5. Limitation of Liability</h3>
+    <p>
+      Whimsy by Nada will not be liable for any damages arising from the use or
+      inability to use this Website or any service provided through this
+      Website. We do not guarantee the availability, accuracy, or completeness
+      of any information presented on the Website.
+    </p>
+
+    <h3>6. Modifications</h3>
+    <p>
+      We reserve the right to update or change these Terms at any time. Your
+      continued use of the Website after any modifications indicates acceptance
+      of the updated Terms.
+    </p>
+
+    <h3>7. Governing Law</h3>
+    <p>
+      These Terms shall be governed by and interpreted in accordance with the
+      laws of the United Kingdom, without regard to its conflict of law
+      provisions.
+    </p>
+
+    <h3>8. Contact</h3>
+    <p>
+      If you have any questions about these Terms, please contact us via the
+      contact form on the Website or email whimsybynada@gmail.com.
+    </p>
+  </main>
+</Layout>
+
+<style>
+  :root {
+    --black: ${theme.black};
+  }
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 1000px;
+    max-width: calc(100% - 2rem);
+    color: var(--balck);
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: center;
+    font-family: "Arial, sans-serif";
+  }
+</style>
