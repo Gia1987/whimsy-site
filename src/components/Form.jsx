@@ -5,7 +5,7 @@ import { send } from "@emailjs/browser";
 export const Form = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [ChartCount, setChartCount] = useState(0);
+  const [CharCount, setCharCount] = useState(0);
   const [loading, setLoading] = useState(false);
   const [feedbackMessage, setFeedbackMessage] = useState("");
   const [error, setError] = useState(false);
@@ -16,7 +16,7 @@ export const Form = () => {
     const text = e.target.value;
     if (text.length <= 500) {
       setMessage(text);
-      setChartCount(text.length);
+      setCharCount(text.length);
     }
   };
 
@@ -142,7 +142,7 @@ export const Form = () => {
         rows="5"
         style={styles.textarea}
       />
-      <p style={styles.wordCount}>Charts Count: {ChartCount}/500</p>
+      <p style={styles.wordCount}>Chars Count: {CharCount}/500</p>
       <button type="submit" style={styles.button} disabled={loading}>
         Send {loading && <div style={styles.spinner}></div>}
       </button>
